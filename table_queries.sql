@@ -1,0 +1,7 @@
+DROP TABLE titles;
+
+CREATE TABLE titles(
+	title_id VARCHAR(30) NOT NULL PRIMARY KEY,
+	title VARCHAR(50)
+
+);
