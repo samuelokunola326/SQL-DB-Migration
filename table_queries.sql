@@ -7,6 +7,9 @@ CREATE TABLE titles(
 	title VARCHAR(50)
 
 );
+-- Test table output
+SELECT * FROM titles
+LIMIT 3;
 
 -- adding drop statement to make script reusable
 DROP TABLE IF EXISTS employees;
@@ -25,6 +28,10 @@ CREATE TABLE employees(
 	
 );
 
+-- Test table output
+SELECT * FROM employees
+LIMIT 3;
+
 -- adding drop statement to make script reusable
 DROP TABLE IF EXISTS salaries;
 
@@ -37,6 +44,10 @@ CREATE TABLE salaries(
 
 );
 
+-- Test table output
+SELECT * FROM salaries
+LIMIT 3;
+
 -- adding drop statement to make script reusable
 DROP TABLE IF EXISTS depts;
 
@@ -46,6 +57,10 @@ CREATE TABLE depts(
 	dept_name VARCHAR(30)
 
 );
+
+-- Test table output
+SELECT * FROM depts
+LIMIT 3;
 
 -- adding drop statement to make script reusable
 DROP TABLE IF EXISTS dept_emp;
@@ -59,6 +74,10 @@ CREATE TABLE dept_emp(
 	
 );
 
+-- Test table output
+SELECT * FROM dept_emp
+LIMIT 3;
+
 -- adding drop statement to make script reusable 
 DROP TABLE IF EXISTS dept_mgmt;
 
@@ -69,3 +88,7 @@ CREATE TABLE dept_mgmt(
 	PRIMARY KEY(dept_no,mgmt_emp_no)
 
 );
+
+-- Test table output
+SELECT * FROM dept_mgmt
+LIMIT 3;
