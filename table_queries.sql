@@ -1,14 +1,17 @@
-DROP TABLE titles;
+-- adding drop statement to make script reusable
+DROP TABLE IF EXISTS titles;
 
+-- creating the table for titles
 CREATE TABLE titles(
 	title_id VARCHAR(30) NOT NULL PRIMARY KEY,
 	title VARCHAR(50)
 
 );
 
-DROP TABLE employees;
+-- adding drop statement to make script reusable
+DROP TABLE IF EXISTS employees;
 
-
+-- creating the table for employees
 CREATE TABLE employees(
 	emp_no INT NOT NULL PRIMARY KEY,
 	title_id VARCHAR(30) NOT NULL,
@@ -22,9 +25,10 @@ CREATE TABLE employees(
 	
 );
 
+-- adding drop statement to make script reusable
+DROP TABLE IF EXISTS salaries;
 
-DROP TABLE salaries;
-
+-- creating the table for salaries
 CREATE TABLE salaries(
 	emp_no INT NOT NULL,
 	salary MONEY,
@@ -33,20 +37,20 @@ CREATE TABLE salaries(
 
 );
 
+-- adding drop statement to make script reusable
+DROP TABLE IF EXISTS depts;
 
-DROP TABLE depts;
-
-
+-- creating the table for depts
 CREATE TABLE depts(
 	dept_no VARCHAR(30)NOT NULL PRIMARY KEY,
 	dept_name VARCHAR(30)
 
 );
 
+-- adding drop statement to make script reusable
+DROP TABLE IF EXISTS dept_emp;
 
-DROP TABLE dept_emp;
-
-
+-- creating the table for dept_emp
 CREATE TABLE dept_emp(
 	emp_no INT NOT NULL,
 	dept_no VARCHAR(30) NOT NULL,
@@ -55,8 +59,10 @@ CREATE TABLE dept_emp(
 	
 );
 
-DROP TABLE dept_mgmt;
+-- adding drop statement to make script reusable 
+DROP TABLE IF EXISTS dept_mgmt;
 
+-- creating the table for dept_mgmt
 CREATE TABLE dept_mgmt(
 	dept_no VARCHAR(30) NOT NULL,
 	mgmt_emp_no INT NOT NULL,
