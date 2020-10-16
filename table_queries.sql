@@ -42,3 +42,24 @@ CREATE TABLE depts(
 	dept_name VARCHAR(30)
 
 );
+
+
+DROP TABLE dept_emp;
+
+
+CREATE TABLE dept_emp(
+	emp_no INT NOT NULL,
+	dept_no VARCHAR(30) NOT NULL,
+	PRIMARY KEY(emp_no,dept_no)
+
+	
+);
+
+DROP TABLE dept_mgmt;
+
+CREATE TABLE dept_mgmt(
+	dept_no VARCHAR(30) NOT NULL,
+	mgmt_emp_no INT NOT NULL,
+	PRIMARY KEY(dept_no,mgmt_emp_no)
+
+);
