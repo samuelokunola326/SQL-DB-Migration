@@ -66,4 +66,5 @@ WHERE depts.dept_name IN ('Sales', 'Development');
 
 SELECT last_name, COUNT(last_name) AS LN_Count
 FROM employees
+GROUP BY last_name
 
