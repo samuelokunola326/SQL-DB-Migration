@@ -63,7 +63,7 @@ INNER JOIN employees ON
 	dept_emp.emp_no = employees.emp_no
 WHERE depts.dept_name IN ('Sales', 'Development');
 
-
+--Query Num 8
 SELECT last_name, COUNT(last_name) AS LN_Count
 FROM employees
 GROUP BY last_name
