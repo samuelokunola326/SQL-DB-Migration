@@ -2,6 +2,7 @@
 
 
 Data Cleaning/Review
+
 Review legacy files and identify relationships to be created, and constraints to be put in place to manage data.
 
 Data Modeling
