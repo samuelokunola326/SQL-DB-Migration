@@ -1,15 +1,3 @@
 # sql-challenge
 
-
-Data Cleaning/Review
-
-Review legacy files and identify relationships to be created, and constraints to be put in place to manage data.
-
-Data Modeling
-Migrate legacy files into a database and create a table schema to properly host data using a Postgre SQL database. Then use Quick DBD web tool to create a diagram to visually present the schema of the DB for steakholder consumption. Lastly, write a script that creates all necessary tables outlined in the table schema design.
-
-Data Analysis
-Translate the questions of steakholders into Actionable queries that could be used to draw insights.
-
-Data Engineering
-Create a connection using python's sqlalchemy library to access new database.
+This was a DB migration project where we reviewed legacy files and identified relationships that needed to be created and constraints that needed to be put in place to maintian the data integrity. Then used Quick DBD web tool to create a diagram to visually present the designed schema of the DB for steakholder consumption. A script was executed to design the outlined schema to host the data in a Postgre SQL database, the legacy files were then imported into the database. After the databse creation and importing was complete, another scripted was used to draw deeper exloratory insights. Lastly, we created a connection using python's sqlalchemy library to expand the number of apps the data will be available to for export and analysis.
